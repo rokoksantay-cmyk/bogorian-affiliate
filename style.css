@@ -198,34 +198,120 @@ color:#d4a45a;
 }
 
 .earnings{
-padding:100px 0;
-background:#111;
+padding:100px 20px;
+background:linear-gradient(
+180deg,
+#0f172a,
+#111827
+);
+text-align:center;
 }
 
 .earnings h2{
-text-align:center;
 font-size:48px;
-margin-bottom:50px;
+margin-bottom:20px;
+color:#fff;
+}
+
+.earning-subtitle{
+max-width:800px;
+margin:0 auto 50px;
+color:#cbd5e1;
+font-size:18px;
+line-height:1.8;
 }
 
 .earning-grid{
 display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
 .earning-card{
-background:#181818;
-padding:40px;
-border-radius:24px;
-text-align:center;
+padding:40px 30px;
+
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.1);
+border-radius:28px;
+
+transition:.4s;
+}
+
+.earning-card:hover{
+transform:translateY(-10px);
+box-shadow:0 25px 60px rgba(212,164,90,.25);
+}
+
+.earning-card.featured{
+border:2px solid #d4a45a;
+box-shadow:0 20px 60px rgba(212,164,90,.25);
+}
+
+.earning-icon{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.earning-card h3{
+font-size:28px;
+margin-bottom:15px;
+color:#fff;
 }
 
 .earning-card p{
-color:#d4a45a;
-font-size:34px;
+color:#d1d5db;
+margin-bottom:20px;
+line-height:1.7;
+}
+
+.earning-card span{
+display:inline-block;
+padding:10px 20px;
+border-radius:999px;
+
+background:linear-gradient(
+135deg,
+#f7d488,
+#d4a45a
+);
+
+color:#111;
 font-weight:700;
-margin-top:10px;
+}
+
+.earning-cta{
+margin-top:60px;
+}
+
+.earning-cta p{
+font-size:20px;
+color:#fff;
+margin-bottom:25px;
+}
+
+.earning-cta a{
+display:inline-block;
+padding:16px 40px;
+
+background:linear-gradient(
+135deg,
+#f7d488,
+#d4a45a
+);
+
+color:#111;
+font-weight:800;
+text-decoration:none;
+
+border-radius:999px;
+
+transition:.3s;
+}
+
+.earning-cta a:hover{
+transform:translateY(-3px);
 }
 
 .products{
