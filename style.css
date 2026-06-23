@@ -227,11 +227,28 @@ padding:50px;
 border-radius:24px;
 text-align:center;
 font-size:40px;
+text-decoration:none;
+color:white;
+transition:.3s;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.resource-card:hover{
+transform:translateY(-10px);
+border-color:#d4a45a;
+box-shadow:0 20px 50px rgba(212,164,90,.2);
 }
 
 .resource-card h3{
 font-size:20px;
 margin-top:15px;
+margin-bottom:10px;
+}
+
+.resource-card p{
+font-size:14px;
+opacity:.8;
+line-height:1.6;
 }
 
 .steps{
